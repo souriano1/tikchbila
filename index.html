@@ -1,10 +1,21 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL='http://www.comparez.co'" />
-  </head>
-  <body>
-    Redirecting...
-  </body>
+<head>
+<script>
+var domain ="http://www.comparez.co";
+const urlSearchParams = new URLSearchParams(window.location.href);
+
+
+
+  var url = window.location.href.split( '#' );
+  var l=url.length;
+  var suffix=url[l-1];
+ 
+ window.location.href =domain+suffix.replace(/.*=/, '');
+  
+</script>
+<!-- <meta http-equiv="refresh" content="0;URL=http://www.comparez.co"> -->
+
+</head>
+<body>
+</body>
 </html>
